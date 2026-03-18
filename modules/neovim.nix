@@ -15,7 +15,6 @@
     texlab
     bash-language-server
     ccls
-    tree-sitter
     xclip
     rocmPackages.clang
   ];
