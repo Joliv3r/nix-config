@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ pkgs, ... }:
+{ ... }:
 let
   defaultImports =
     [ # Include the results of the hardware scan.
@@ -23,6 +23,7 @@ let
       ./modules/keyboard.nix
       ./modules/steam.nix
       ./modules/docker.nix
+      ./modules/emulator.nix
 
       ./users/joliver.nix
       # Uncomment scrambler when a scrambling account is needed.
