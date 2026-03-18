@@ -18,9 +18,8 @@
       zathura
       tldr
       qmk
-      brave
       btop
-      firefox
+      librewolf
       vlc
     ];
   };
