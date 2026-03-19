@@ -24,6 +24,7 @@ let
       ./modules/steam.nix
       ./modules/docker.nix
       ./modules/emulator.nix
+      ./modules/storage-considerations.nix
 
       ./users/joliver.nix
       # Uncomment scrambler when a scrambling account is needed.

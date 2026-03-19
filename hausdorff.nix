@@ -19,6 +19,7 @@ let
       ./modules/ssh.nix
       ./modules/packages/latex.nix
       ./modules/steam.nix
+      ./modules/storage-considerations.nix
 
       ./users/joliver.nix
     ];

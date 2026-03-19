@@ -18,6 +18,7 @@ let
       ./modules/secret.nix
       ./modules/audio.nix
       ./modules/ssh.nix
+      ./modules/storage-considerations.nix
 
       ./users/joliver.nix
       # Uncomment scrambler when a scrambling account is needed.
