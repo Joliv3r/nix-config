@@ -24,6 +24,7 @@
         brightnessctl
         scrot
         i3-swallow
+        unclutter-xfixes
       ];
     };
   }; 
