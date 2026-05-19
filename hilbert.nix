@@ -19,7 +19,8 @@ let
       ./modules/bluetooth.nix
       ./modules/ssh.nix
       ./modules/packages/gap.nix
-      ./modules/packages/sage.nix
+      # Sage is not built at the moment because of lengthy tests
+      # ./modules/packages/sage.nix
       ./modules/packages/latex.nix
       ./modules/keyboard.nix
       ./modules/steam.nix
