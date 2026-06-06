@@ -15,7 +15,6 @@ let
       ./modules/efi.nix
       ./modules/X.nix
       ./modules/secret.nix
-      ./modules/audio.nix
       ./modules/bluetooth.nix
       ./modules/ssh.nix
       ./modules/packages/gap.nix

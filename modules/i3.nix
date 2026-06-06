@@ -25,6 +25,7 @@
         scrot
         i3-swallow
         unclutter-xfixes
+        pulseaudio
       ];
     };
   }; 
@@ -36,4 +37,14 @@
       pulseSupport = true;
     };
   };
+
+  # Audio settings
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
+
+  environment.systemPackages = with pkgs; [
+    pavucontrol
+  ];
 }
