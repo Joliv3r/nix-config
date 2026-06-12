@@ -6,14 +6,17 @@
         "tnoodle": "tnoodle"
       },
       "locked": {
-        "lastModified": 1781271041,
-        "narHash": "sha256-HSizweZaeXvvr2b2vM9M4TEvCfKDYoOjU7rQ/orLlWM=",
-        "path": "/home/joliver/flakes/",
-        "type": "path"
+        "lastModified": 1781271316,
+        "narHash": "sha256-CRq1OYmo2AUeRpFcH0iBu3f9zjm4D2CYfPh9u4nQCZo=",
+        "owner": "joliv3r",
+        "repo": "flakes",
+        "rev": "417692feff63431800195c6a290b5b41d1becee5",
+        "type": "github"
       },
       "original": {
-        "path": "/home/joliver/flakes/",
-        "type": "path"
+        "owner": "joliv3r",
+        "repo": "flakes",
+        "type": "github"
       }
     },
     "flake-parts": {
@@ -67,11 +70,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1780243769,
-        "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
+        "lastModified": 1781074563,
+        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
         "type": "github"
       },
       "original": {
