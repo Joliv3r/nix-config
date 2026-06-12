@@ -3,11 +3,14 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # custom-flakes.url = "github:joliv3r/flakes";
+    custom-flakes.url = "github:joliv3r/flakes";
   };
 
-  outputs = { nixpkgs, ... }:
+  outputs = { nixpkgs, ... } @ inputs:
   {
     nixosConfigurations.hilbert = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       modules = [
         ./hilbert.nix
       ];
