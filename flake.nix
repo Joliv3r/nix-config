@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # custom-flakes.url = "github:joliv3r/flakes";
     custom-flakes.url = "github:joliv3r/flakes";
   };
 
