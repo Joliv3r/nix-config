@@ -1,22 +1,7 @@
-{ pkgs, ... }:
+{ inputs, ... }:
 
 {
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
-
-
-  # Make sure lsps and other useful packages are present.
-  environment.systemPackages = with pkgs; [
-    pyright
-    nil
-    lua-language-server
-    texlab
-    bash-language-server
-    ccls
-    xclip
-    rocmPackages.clang
-    tree-sitter
+  environment.systemPackages = [
+    inputs.neovim.packages.x86_64-linux.default
   ];
 }
