@@ -19,7 +19,9 @@ let
       ./modules/ssh.nix
       ./modules/packages/latex.nix
       ./modules/steam.nix
+      ./modules/packages/sage.nix
       ./modules/storage-considerations.nix
+      ./modules/bluetooth.nix
 
       ./users/joliver.nix
     ];
@@ -33,6 +35,7 @@ in
   environment.systemPackages = with pkgs; [
     libreoffice
     obs-studio
+    pavucontrol
   ];
 
   # Copy the NixOS configuration file and link it from the resulting system
