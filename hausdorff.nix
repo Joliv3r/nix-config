@@ -15,7 +15,6 @@ let
       ./modules/efi.nix
       ./modules/X.nix
       ./modules/secret.nix
-      ./modules/audio.nix
       ./modules/ssh.nix
       ./modules/packages/latex.nix
       ./modules/steam.nix

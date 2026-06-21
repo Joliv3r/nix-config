@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ ... }:
+{ inputs, ... }:
 let
   defaultImports =
     [ # Include the results of the hardware scan.
@@ -15,7 +15,6 @@ let
       ./modules/efi.nix
       ./modules/X.nix
       ./modules/secret.nix
-      ./modules/audio.nix
       ./modules/bluetooth.nix
       ./modules/ssh.nix
       ./modules/packages/gap.nix
@@ -50,6 +49,10 @@ in
   '';
 
   services.fprintd.enable = true;
+
+  environment.systemPackages = [
+    inputs.custom-flakes.packages.x86_64-linux.tnoodle
+  ];
 
   # This option seems to be necessary when building the OS from scratch
   # services.logrotate.checkConfig = false;
